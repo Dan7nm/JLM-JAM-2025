@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "JLM JAM 2025.sln"
+    "dotnet.defaultSolution": "JLM-JAM-2025.sln"
 }
