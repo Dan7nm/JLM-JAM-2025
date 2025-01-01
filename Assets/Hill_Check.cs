@@ -4,30 +4,28 @@ using UnityEngine;
 
 public class Hill_Check : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    private void OnTriggerEnter2D(Collider2D other)
+    // Collision Check with Player
+    // Hill wants 3 stones (always)
+    // Subtracts 3 stones and continues hilling around
+    private void OnCollisionEnter2D(Collider2D other)
         {
             // Check if the colliding object is the player
             if (other.CompareTag("Player"))
             {
-                PlayerCharacter player = other.GetComponent<PlayerCharacter>();
-                if (player == null)
+                Inventory inventory = other.GetComponent<Inventory>();
+                num_stones = inventory.GetItemNum("Stone");
+                if (num_stones == null)
                 {
-                    Debug.LogWarning("Player does not have a PlayerCharacter component!");
+                    Debug.Log("Player does not have a Stone component!");
                     return;
                 }
 
                 // Check if the player has at least 3 stones
-                if (player.num_stones >= 3)
+                if (num_stones >= 3)
                 {
                     Debug.Log("Granted");
-                    player.num_stones -= 3; // Subtract 3 stones
+                    inventory.SetItemNum("Stone", num_stones - 3); // Subtract 3 stones
                 }
                 else
                 {
