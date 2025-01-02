@@ -11,14 +11,7 @@ public class TempPlayer : MonoBehaviour
         transform.Translate(Vector2.right * moveInput * speed * Time.deltaTime);  // Move the player
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if((other.gameObject.tag == "Stone1") || (other.gameObject.tag == "Stone2") || (other.gameObject.tag == "Stone3"))
-        {
-            Destroy(other.gameObject);
-        }
-            
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
