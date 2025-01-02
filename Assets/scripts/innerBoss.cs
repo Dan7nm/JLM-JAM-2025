@@ -3,6 +3,7 @@ using UnityEngine;
 public class innerBoss : MonoBehaviour
 {
     [SerializeField] GameObject path;
+    [SerializeField] AudioClip[] soundsBoss;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +20,7 @@ public class innerBoss : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            AudioSource.PlayClipAtPoint(soundsBoss[Random.Range(0, soundsBoss.Length)], Camera.main.transform.position);
             path.SetActive(true);
         }
     }

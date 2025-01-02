@@ -24,6 +24,7 @@ public class TempPlayer : MonoBehaviour
     {
         if(other.gameObject.tag == "Boss")
         {
+            FindObjectOfType<follow>().zoomInNow();
             GetComponent<AudioSource>().volume = 1;
             movingMusic.GetComponent<AudioSource>().volume = 0.2f;
         }
@@ -33,6 +34,7 @@ public class TempPlayer : MonoBehaviour
     {
         if (other.gameObject.tag == "Boss")
         {
+            FindObjectOfType<follow>().zoomOutNow();
             GetComponent<AudioSource>().volume = 0;
             movingMusic.GetComponent<AudioSource>().volume = 1;
         }
