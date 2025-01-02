@@ -27,7 +27,7 @@ public class GoldSpawner : MonoBehaviour
             {
                 Spawn();
             }
-        // Debug.Log($"Timer: {timerScript.timeRemaining}");
+        Debug.Log($"Timer: {timerScript.timeRemaining}");
         if (Time.timeSinceLevelLoad >= spawnTime && 
             (rockType.CompareTag("Blood Stone") ? timerScript.timeRemaining <= 0 : true))
         {

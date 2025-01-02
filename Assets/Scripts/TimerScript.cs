@@ -14,6 +14,8 @@ public class TimerScript : MonoBehaviour
             timeRemaining -= Time.deltaTime;
             UpdateTimerUI();
         }
+
+        
         else
         {
             // Timer reaches zero
