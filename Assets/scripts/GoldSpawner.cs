@@ -9,6 +9,8 @@ public class GoldSpawner : MonoBehaviour
 
     [SerializeField] int spawn_num = 1;
 
+    private int counter=1;
+
     float spawnTime;
 
     // Reference to TimerScript to access remainingTime
@@ -23,16 +25,16 @@ public class GoldSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeSinceLevelLoad >= spawnTime && !rockType.CompareTag("Blood Stone"))
+        if (Time.timeSinceLevelLoad >= spawnTime && !rockType.CompareTag("Blood Stone")) 
             {
                 Spawn();
             }
-        // Debug.Log($"Timer: {timerScript.timeRemaining}");
-        // if (Time.timeSinceLevelLoad >= spawnTime && 
-        //     (rockType.CompareTag("Blood Stone") ? timerScript.timeRemaining <= 0 : true))
-        // {
-        //     Spawn();
-        // }
+        if (Time.timeSinceLevelLoad >= spawnTime && 
+            rockType.CompareTag("Blood Stone") && Time.timeSinceLevelLoad >= (counter * timerScript.timerTime))
+        {
+            counter++;
+            Spawn();
+        }
     }
 
     private void Spawn()
