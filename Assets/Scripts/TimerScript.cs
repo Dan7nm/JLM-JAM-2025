@@ -6,8 +6,20 @@ public class TimerScript : MonoBehaviour
     public float timeRemaining = 60f; // Timer start value in seconds
     public TextMeshProUGUI timerText; // Reference to the UI TextMeshPro component
 
+    public float intervalForSat = 10.0f;
+    public float lastIvterChange = 0 ;
+    
     void Update()
     {
+        //every 10 sec, change the value of satisfaction in -1
+        if (Time.timeSinceLevelLoad - lastIvterChange >= intervalForSat)
+        {
+            lastIvterChange = Time.timeSinceLevelLoad;
+            Debug.Log("ten sec passesed");
+            FindObjectOfType<SatisfactionScript>().changeSatAfterTenSec();
+        }
+
+
         // Decrease timer over time
         if (timeRemaining > 0)
         {
@@ -31,4 +43,6 @@ public class TimerScript : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    
 }
