@@ -351,9 +351,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6034278532900494745, guid: 86ded0fea80fe4ec590238a3a4bc5863, type: 3}
     - target: {fileID: 3819950079449159090, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
+      propertyPath: range
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819950079449159090, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
       propertyPath: rockType
       value: 
       objectReference: {fileID: 6034278532900494745, guid: 86ded0fea80fe4ec590238a3a4bc5863, type: 3}
+    - target: {fileID: 3819950079449159090, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
+      propertyPath: spawn_num
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7809131221270472313, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.42
@@ -671,6 +679,10 @@ PrefabInstance:
     - target: {fileID: 7032931781767545645, guid: 326ae9742b1534238a0b0009e51c123a, type: 3}
       propertyPath: m_text
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469545953239196460, guid: 326ae9742b1534238a0b0009e51c123a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 165
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1210,6 +1222,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7803988147495477090, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803988147495477090, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 167
+      objectReference: {fileID: 0}
     - target: {fileID: 7889746994898137961, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2427,11 +2447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715031033341038517, guid: e81546ce09ec24fdab74d5f6efa9cfe4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -300
+      value: -281
       objectReference: {fileID: 0}
     - target: {fileID: 6715031033341038517, guid: e81546ce09ec24fdab74d5f6efa9cfe4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 181.66
+      value: 167
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3051,6 +3071,10 @@ PrefabInstance:
     - target: {fileID: 3163718867427417711, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
       propertyPath: m_Name
       value: SmallRockSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819950079449159090, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
+      propertyPath: range
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3819950079449159090, guid: adc949e35e4d44d8b9c97b151467ee9e, type: 3}
       propertyPath: rockType
