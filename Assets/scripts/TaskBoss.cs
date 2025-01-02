@@ -16,7 +16,7 @@ public class TaskBoss : MonoBehaviour
 
     float textTime;
     [SerializeField] float textDuration = 6;
-
+    [SerializeField] GameObject templeOne;
 
     enum TASK_STATUS { WAITING_BIG, WAITING_MED, WAITING_SMALL, DONE }
     TASK_STATUS status;
@@ -57,6 +57,7 @@ public class TaskBoss : MonoBehaviour
             {
                 if (collision.GetComponent<Inventory>().GetItemNum("Big Stone") >= bigRocksNeeded)
                 {
+                    templeOne.gameObject.SetActive(true);
                     bossText.text = "Ah, yes, the big rocks. Not bad, though I expected at least some flair. " +
                         "Now, bring me 4 medium rocks. Chop-chop!";
                     status = TASK_STATUS.WAITING_MED;
