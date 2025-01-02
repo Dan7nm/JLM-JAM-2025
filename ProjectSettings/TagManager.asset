@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 3
   tags:
   - Wood
+  - Stone1
+  - Stone3
+  - Stone2
+  - Boss
+  - portal
+  - Big Stone
+  - Med Stone
+  - Small Stone
   layers:
   - Default
   - TransparentFX

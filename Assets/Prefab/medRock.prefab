@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6601270938981008997}
   - component: {fileID: 511959351377883973}
   - component: {fileID: 8544003156425565315}
+  - component: {fileID: 4790452771343692525}
   m_Layer: 0
   m_Name: medRock
-  m_TagString: Stone2
+  m_TagString: Med Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,3 +208,16 @@ MonoBehaviour:
   - {fileID: 7600851719817561192, guid: fd6af16bd81c54bc2a8a12bf5eea494f, type: 3}
   - {fileID: 7837198063192246602, guid: fd6af16bd81c54bc2a8a12bf5eea494f, type: 3}
   - {fileID: -3423426028931582353, guid: fd6af16bd81c54bc2a8a12bf5eea494f, type: 3}
+--- !u!114 &4790452771343692525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034278532900494745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a28af18a260c41bba896281ab92067c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
