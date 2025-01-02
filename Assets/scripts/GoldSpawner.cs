@@ -6,6 +6,9 @@ public class GoldSpawner : MonoBehaviour
     [SerializeField] float minDelay = 1f;
     [SerializeField] float maxDelay = 3;
     [SerializeField] float range = 1.1f;
+
+    [SerializeField] int spawn_num = 1;
+
     float spawnTime;
 
     // Reference to TimerScript to access remainingTime
@@ -24,7 +27,7 @@ public class GoldSpawner : MonoBehaviour
             {
                 Spawn();
             }
-        Debug.Log($"Timer: {timerScript.timeRemaining}");
+        // Debug.Log($"Timer: {timerScript.timeRemaining}");
         if (Time.timeSinceLevelLoad >= spawnTime && 
             (rockType.CompareTag("Blood Stone") ? timerScript.timeRemaining <= 0 : true))
         {
@@ -34,7 +37,10 @@ public class GoldSpawner : MonoBehaviour
 
     private void Spawn()
     {
+        for (int i = 0; i<spawn_num; i++)
+        {
         Instantiate(rockType, transform.position + new Vector3(Random.Range(-range, range), 0, 0), Quaternion.identity);
         spawnTime = Time.timeSinceLevelLoad + Random.Range(minDelay, maxDelay);
+        }
     }
 }
