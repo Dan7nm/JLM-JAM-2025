@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: ddb7b7831f6584830a93c63e6e466c0f
+guid: 2ece381ed0f6d49a2b3ef7a491bcfc1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3362323519201231854
-    second: bigStones_0
+      213: -7899952040774298655
+    second: rocks2-04_0
   - first:
-      213: -7067528216502724235
-    second: bigStones_1
+      213: 5185539728410696873
+    second: rocks2-04_1
   - first:
-      213: -2699799423895896986
-    second: bigStones_2
+      213: -1474385883259933957
+    second: rocks2-04_2
   - first:
-      213: 7121689179154703909
-    second: bigStones_3
+      213: -7362382600660466048
+    second: rocks2-04_3
+  - first:
+      213: -1327521733674933502
+    second: rocks2-04_4
+  - first:
+      213: -468198174257391087
+    second: rocks2-04_5
+  - first:
+      213: -4947313957890606098
+    second: rocks2-04_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 95
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bigStones_0
+      name: rocks2-04_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 635
-        width: 251
-        height: 158
+        x: 222
+        y: 589
+        width: 122
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee34ee52d6f59ae20800000000000000
-      internalID: 3362323519201231854
+      spriteID: 1e39603897bbd5290800000000000000
+      internalID: -7899952040774298655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigStones_1
+      name: rocks2-04_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 428
-        width: 284
-        height: 178
+        x: 397
+        y: 583
+        width: 171
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5791e4f48881bed90800000000000000
-      internalID: -7067528216502724235
+      spriteID: 9ac5898a8ecb6f740800000000000000
+      internalID: 5185539728410696873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigStones_2
+      name: rocks2-04_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 251
-        width: 280
-        height: 142
+        x: 619
+        y: 576
+        width: 176
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66c71e56ab2688ad0800000000000000
-      internalID: -2699799423895896986
+      spriteID: bfae07ec9dde98be0800000000000000
+      internalID: -1474385883259933957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigStones_3
+      name: rocks2-04_3
       rect:
         serializedVersion: 2
-        x: 73
-        y: 26
-        width: 276
-        height: 186
+        x: 854
+        y: 584
+        width: 160
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +212,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 526624c739255d260800000000000000
-      internalID: 7121689179154703909
+      spriteID: 086cd13480093d990800000000000000
+      internalID: -7362382600660466048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocks2-04_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 62
+        width: 736
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203e1b84402b39de0800000000000000
+      internalID: -1327521733674933502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocks2-04_5
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 89
+        width: 620
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ad6eabd30a089f0800000000000000
+      internalID: -468198174257391087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocks2-04_6
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 252
+        width: 621
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb3993da2c975bb0800000000000000
+      internalID: -4947313957890606098
       vertices: []
       indices: 
       edges: []
@@ -213,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 73aaf342298e54fc3936e5cec9ebd7da
+    spriteID: ce0704d7ccd3b4b59abf838164d8d043
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bigStones_0: 3362323519201231854
-      bigStones_1: -7067528216502724235
-      bigStones_2: -2699799423895896986
-      bigStones_3: 7121689179154703909
+      rocks2-04_0: -7899952040774298655
+      rocks2-04_1: 5185539728410696873
+      rocks2-04_2: -1474385883259933957
+      rocks2-04_3: -7362382600660466048
+      rocks2-04_4: -1327521733674933502
+      rocks2-04_5: -468198174257391087
+      rocks2-04_6: -4947313957890606098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

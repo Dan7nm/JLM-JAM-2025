@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: ddb7b7831f6584830a93c63e6e466c0f
+guid: fd6af16bd81c54bc2a8a12bf5eea494f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3362323519201231854
-    second: bigStones_0
+      213: 4472376324241217605
+    second: medRocks_0
   - first:
-      213: -7067528216502724235
-    second: bigStones_1
+      213: 7600851719817561192
+    second: medRocks_1
   - first:
-      213: -2699799423895896986
-    second: bigStones_2
+      213: 7837198063192246602
+    second: medRocks_2
   - first:
-      213: 7121689179154703909
-    second: bigStones_3
+      213: -3423426028931582353
+    second: medRocks_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bigStones_0
+      name: medRocks_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 635
-        width: 251
-        height: 158
+        x: 22
+        y: 6
+        width: 109
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee34ee52d6f59ae20800000000000000
-      internalID: 3362323519201231854
+      spriteID: 548d34c3292111e30800000000000000
+      internalID: 4472376324241217605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigStones_1
+      name: medRocks_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 428
-        width: 284
-        height: 178
+        x: 170
+        y: 47
+        width: 114
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5791e4f48881bed90800000000000000
-      internalID: -7067528216502724235
+      spriteID: 864842e3e56ab7960800000000000000
+      internalID: 7600851719817561192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigStones_2
+      name: medRocks_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 251
-        width: 280
-        height: 142
+        x: 314
+        y: 32
+        width: 128
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66c71e56ab2688ad0800000000000000
-      internalID: -2699799423895896986
+      spriteID: a4904fe7d1253cc60800000000000000
+      internalID: 7837198063192246602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigStones_3
+      name: medRocks_3
       rect:
         serializedVersion: 2
-        x: 73
-        y: 26
-        width: 276
-        height: 186
+        x: 499
+        y: 28
+        width: 112
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 526624c739255d260800000000000000
-      internalID: 7121689179154703909
+      spriteID: f66f4be2a2c8d70d0800000000000000
+      internalID: -3423426028931582353
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 73aaf342298e54fc3936e5cec9ebd7da
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bigStones_0: 3362323519201231854
-      bigStones_1: -7067528216502724235
-      bigStones_2: -2699799423895896986
-      bigStones_3: 7121689179154703909
+      medRocks_0: 4472376324241217605
+      medRocks_1: 7600851719817561192
+      medRocks_2: 7837198063192246602
+      medRocks_3: -3423426028931582353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
