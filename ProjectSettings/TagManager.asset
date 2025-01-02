@@ -13,6 +13,7 @@ TagManager:
   - Big Stone
   - Med Stone
   - Small Stone
+  - Blood Stone
   layers:
   - Default
   - TransparentFX
