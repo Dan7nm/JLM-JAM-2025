@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Hill_Check : MonoBehaviour
 {
-
     // Collision Check with Player
     // Hill wants 3 stones (always)
     // Subtracts 3 stones and continues hilling around
@@ -14,7 +13,7 @@ public class Hill_Check : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 Inventory inventory = other.GetComponent<Inventory>();
-                num_stones = inventory.GetItemNum("Stone");
+                int num_stones = inventory.GetItemNum("Stone");
                 if (num_stones == null)
                 {
                     Debug.Log("Player does not have a Stone component!");
