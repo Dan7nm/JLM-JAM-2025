@@ -3,25 +3,24 @@ using TMPro; // Make sure you are using TextMeshPro for better text rendering.
 
 public class TimerScript : MonoBehaviour
 {
-    public float timeRemaining = 20f; // Timer start value in seconds
-    public TextMeshProUGUI timerText; // Reference to the UI TextMeshPro component
+    [SerializeField] public float timerTime = 20f; // Timer start value in seconds
+    [SerializeField] public TextMeshProUGUI timerText; // Reference to the UI TextMeshPro component
+
+    public float intervalForSat = 10.0f;
+    public float lastIvterChange = 0 ;
 
     void Update()
     {
-        // Decrease timer over time
-        if (timeRemaining > 0)
+        UpdateTimerUI();
+
+        // every 10 sec, change the value of satisfaction in -1
+        if (Time.timeSinceLevelLoad - lastIvterChange >= intervalForSat)
         {
-            timeRemaining -= Time.deltaTime;
-            UpdateTimerUI();
+            lastIvterChange = Time.timeSinceLevelLoad;
+            Debug.Log("ten sec passesed");
+            FindObjectOfType<SatisfactionScript>().changeSatAfterTenSec();
         }
-        else
-        {
-            // Timer reaches zero
-            timeRemaining = 0;
-            // Add your logic for when the timer finishes (e.g., game over or next level)
-            Debug.Log("Time's up!");
-            timeRemaining = 20f;
-        }
+
     }
 
     void UpdateTimerUI()
@@ -33,8 +32,9 @@ public class TimerScript : MonoBehaviour
         }
         
         // Display the timer in MM:SS format
-        int minutes = Mathf.FloorToInt(timeRemaining / 60);
-        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        float remainingTime = timerTime - Time.timeSinceLevelLoad % timerTime;
+        int minutes = Mathf.FloorToInt(remainingTime / 60);
+        int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
        
     }

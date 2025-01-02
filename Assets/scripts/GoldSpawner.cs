@@ -28,11 +28,11 @@ public class GoldSpawner : MonoBehaviour
                 Spawn();
             }
         // Debug.Log($"Timer: {timerScript.timeRemaining}");
-        if (Time.timeSinceLevelLoad >= spawnTime && 
-            (rockType.CompareTag("Blood Stone") ? timerScript.timeRemaining <= 0 : true))
-        {
-            Spawn();
-        }
+        // if (Time.timeSinceLevelLoad >= spawnTime && 
+        //     (rockType.CompareTag("Blood Stone") ? timerScript.timeRemaining <= 0 : true))
+        // {
+        //     Spawn();
+        // }
     }
 
     private void Spawn()
