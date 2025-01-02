@@ -3,7 +3,7 @@ using UnityEngine;
 public class follow : MonoBehaviour
 {
     [SerializeField] GameObject Player;
-    int currentCamera = 20;
+    
     int minCamera = 5;
     int maxCamera = 20;
     bool zoomIn = false;
@@ -44,10 +44,12 @@ public class follow : MonoBehaviour
     public void zoomInNow()
     {
         zoomIn = true;
+        zoomOut = false;
     }
 
     public void zoomOutNow()
     {
         zoomOut = true;
+        zoomIn = false;
     }
 }
