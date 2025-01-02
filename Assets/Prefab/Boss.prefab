@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3654638373942274255}
   - component: {fileID: 229502716143454154}
   - component: {fileID: 1377081286410707934}
+  - component: {fileID: 2838263948469511975}
   m_Layer: 0
   m_Name: innerBoss
   m_TagString: Untagged
@@ -241,6 +242,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2838263948469511975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402736471005804079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fcd7605bacd648329936244a77cd5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigRocksNeeded: 1
+  mediumRocksNeeded: 20
+  smallRocksNeeded: 40
+  bossText: {fileID: 0}
+  textDuration: 6
+  templeDuration: 2
+  templeBig: {fileID: 0}
+  templeMed: {fileID: 0}
+  templeSmall: {fileID: 0}
 --- !u!1 &5120774848926343024
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +449,7 @@ Transform:
   m_GameObject: {fileID: 9166184426973633182}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.239876, y: -0.10134125, z: 0}
+  m_LocalPosition: {x: -8.19, y: -0.10134125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -6,7 +6,7 @@ public class Collectible : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision detected with: " + collision.collider.name);
+        // Debug.Log("Collision detected with: " + collision.collider.name);
         if (collision.collider.CompareTag("Player"))
         {
             Inventory inventory = collision.collider.GetComponent<Inventory>();

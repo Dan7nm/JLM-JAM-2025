@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class TempPlayer : MonoBehaviour
 {
     public float speed = 5f;  // Movement speed
@@ -8,11 +9,13 @@ public class TempPlayer : MonoBehaviour
     [SerializeField] GameObject movingMusic;
 
     private Rigidbody2D rb;  // Reference to the Rigidbody2D component
+    Animator anim;
 
     void Start()
     {
         // Get the Rigidbody2D component for physics-based movement
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -20,6 +23,20 @@ public class TempPlayer : MonoBehaviour
         // Horizontal movement input
         float moveInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector2.right * moveInput * speed * Time.deltaTime);
+        if(moveInput > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+            anim.SetBool("isWalk", true);
+        }
+        if (moveInput < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+            anim.SetBool("isWalk", true);
+        }
+        if(moveInput == 0)
+        {
+            anim.SetBool("isWalk", false);
+        }
 
         // Jump when pressing space or up arrow
         if (Input.GetKeyDown(KeyCode.UpArrow)) 
