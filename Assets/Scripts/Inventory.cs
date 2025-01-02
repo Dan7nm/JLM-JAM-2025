@@ -29,7 +29,7 @@ public class Inventory : MonoBehaviour
             items[itemName] = 1;
         }
         UpdateInventoryUI();
-        Debug.Log($"{itemName} added. Total: {items[itemName]}");
+        // Debug.Log($"{itemName} added. Total: {items[itemName]}");
     }
 
     // Return the number of a specific item
