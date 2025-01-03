@@ -1568,6 +1568,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2349232343086151779, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349232343086151779, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771916780465210514, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_text
+      value: 'Collect Rocks for the God of Stone.
+
+        For further inquiries,
+        ask the God of Stone.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771916780465210514, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771916780465210514, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 7803988147495477090, guid: 0721f2caa594f46089111bc6de4f7618, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 357
@@ -2520,7 +2543,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: -9141129840226902823, guid: 5bd7290af59b74c16bb04bdd1770862d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

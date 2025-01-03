@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gradient Background_0: 450168522361516349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
