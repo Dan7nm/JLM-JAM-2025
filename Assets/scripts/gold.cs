@@ -5,6 +5,7 @@ public class gold : MonoBehaviour
     [SerializeField] int hitCounter;
     [SerializeField] int maxHit = 6;
     [SerializeField] Sprite[] sprites;
+    [SerializeField] AudioClip[] hitSounds;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,5 +28,10 @@ public class gold : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         hitCounter++;
+        if(hitCounter == 1)
+        {
+            AudioSource.PlayClipAtPoint(hitSounds[Random.Range(0, hitSounds.Length)], Camera.main.transform.position, 0.5f);
+        }
+        
     }
 }
