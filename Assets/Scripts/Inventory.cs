@@ -1,9 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro; // For TextMeshPro support
+using static UnityEditor.Progress;
+using System;
 
 public class Inventory : MonoBehaviour
 {
+
+    public int maxBig =0;
+    public int maxMed = 0;
+    public int maxSmall= 0 ;
+
+    int counter = 0;
+
     private Dictionary<string, int> items = new Dictionary<string, int>
     {
         { "Big Stone", 0 },
@@ -12,6 +21,7 @@ public class Inventory : MonoBehaviour
     };
 
     public TextMeshProUGUI inventoryText; // Reference to the UI text
+    public TextMeshProUGUI missionText; // Reference to the UI text
 
     void Start()
     {
@@ -61,10 +71,32 @@ public class Inventory : MonoBehaviour
     {
         // Format the dictionary as a clean string for UI
         string inventoryDisplay = "Inventory:\n";
+
+        
         foreach (var item in items)
         {
-            inventoryDisplay += $"{item.Key}: {item.Value}\n";
+            inventoryDisplay += $"{item.Value} \n";
+            //inventoryDisplay += $"{item.Key}: {item.Value}\n";
+
         }
         inventoryText.text = inventoryDisplay.TrimEnd(); // Remove trailing newline
+    }
+
+    public void UpdateMission(int big, int med, int small)
+    {
+        maxBig = big;
+        maxMed = med;
+        maxSmall = small;
+        UpdatemissionUI();
+    }
+
+    private void UpdatemissionUI()
+    {
+        string missionDisplay = $"{maxBig} \n";
+        missionDisplay += $"{maxMed} \n";
+        missionDisplay += $"{maxSmall} \n";
+
+        missionText.text = missionDisplay.TrimEnd(); // Remove trailing newline
+
     }
 }

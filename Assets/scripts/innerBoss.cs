@@ -22,6 +22,7 @@ public class innerBoss : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(soundsBoss[Random.Range(0, soundsBoss.Length)], Camera.main.transform.position);
             path.SetActive(true);
+            FindObjectOfType<headBoss>().Talking();
         }
     }
 }
