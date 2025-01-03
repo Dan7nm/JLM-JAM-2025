@@ -30,7 +30,7 @@ public class gold : MonoBehaviour
         hitCounter++;
         if(hitCounter == 1)
         {
-            AudioSource.PlayClipAtPoint(hitSounds[Random.Range(0, hitSounds.Length)], Camera.main.transform.position, 0.5f);
+            AudioSource.PlayClipAtPoint(hitSounds[Random.Range(0, hitSounds.Length)], Camera.main.transform.position, 0.2f);
         }
         
     }

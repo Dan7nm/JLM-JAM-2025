@@ -20,7 +20,8 @@ public class innerBoss : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            AudioSource.PlayClipAtPoint(soundsBoss[Random.Range(0, soundsBoss.Length)], Camera.main.transform.position);
+            GetComponent<AudioSource>().resource = soundsBoss[Random.Range(0, soundsBoss.Length)];
+            GetComponent<AudioSource>().Play();
             path.SetActive(true);
             FindObjectOfType<headBoss>().Talking();
         }

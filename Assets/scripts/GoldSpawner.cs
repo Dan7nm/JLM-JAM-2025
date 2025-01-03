@@ -9,6 +9,8 @@ public class GoldSpawner : MonoBehaviour
 
     [SerializeField] int spawn_num = 1;
 
+    [SerializeField] AudioClip sound;
+
     private int counter=1;
 
     float spawnTime;
@@ -34,6 +36,10 @@ public class GoldSpawner : MonoBehaviour
         {
             counter++;
             Spawn();
+            Invoke("booldSound", 1.75f);
+            Invoke("booldSound", 2.5f);
+            Invoke("booldSound", 3.2f);
+
         }
     }
 
@@ -44,5 +50,10 @@ public class GoldSpawner : MonoBehaviour
         Instantiate(rockType, transform.position + new Vector3(Random.Range(-range, range), 0, 0), Quaternion.identity);
         spawnTime = Time.timeSinceLevelLoad + Random.Range(minDelay, maxDelay);
         }
+    }
+
+    private void booldSound()
+    {
+        AudioSource.PlayClipAtPoint(sound, Camera.main.transform.position, Random.Range(0.2f, 0.6f));
     }
 }

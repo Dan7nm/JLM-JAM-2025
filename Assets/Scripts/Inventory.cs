@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro; // For TextMeshPro support
 using static UnityEditor.Progress;
 using System;
+//using Unity.VisualScripting;
 
 public class Inventory : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Inventory : MonoBehaviour
     public int maxSmall= 0 ;
 
     int counter = 0;
+
+    [SerializeField] AudioClip sound;
 
     private Dictionary<string, int> items = new Dictionary<string, int>
     {
@@ -30,6 +33,8 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(string itemName)
     {
+        AudioSource.PlayClipAtPoint(sound, Camera.main.transform.position, UnityEngine.Random.Range(0.05f, 0.2f));
+
         if (items.ContainsKey(itemName))
         {
             items[itemName]++;

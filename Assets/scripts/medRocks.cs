@@ -7,6 +7,7 @@ public class medRocks : MonoBehaviour
     [SerializeField] float force = 2;
     float hitTime;
     [SerializeField] Sprite[] sprites;
+    [SerializeField] AudioClip[] hitSounds;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class medRocks : MonoBehaviour
     {
         if(freeFall)
         {
+            AudioSource.PlayClipAtPoint(hitSounds[Random.Range(0, hitSounds.Length)], Camera.main.transform.position, Random.Range(0.05f, 0.15f));
             hitTime = Time.timeSinceLevelLoad;
             GetComponent<Rigidbody2D>().linearVelocity = new Vector2(force, jump);
             freeFall = false;
